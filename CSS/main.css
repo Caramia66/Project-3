@@ -240,9 +240,11 @@ header img {
   left: -15px;
   font-size: 1.2em;
 }
+
 #book-menu {
   background-color: rgb(247, 247, 247);
 }
+
 h1 {
   font-size: large;
   padding: 20px 0;
@@ -251,40 +253,37 @@ h1 {
 #explore {
   padding-bottom: 30px;
 }
+
 #explore p {
   padding: 10px 20px 25px 10px;
 }
-button {
+
+.button {
   width: 60%;
   height: 60px;
   padding: 10px 20px;
   font-family: "Raleway", sans-serif;
   text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
   border-radius: 30px;
   background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   border: 0;
-}
-
-button a {
-  font-size: 12px;
-  color: #fff;
-}
-
-.button span:hover { 
-  text-shadow:  1px 1px 1px rgba(255, 255, 255, 0.302);
+  transition: all 0.2s ease-in-out;
 }
 
 
-button:hover {
+.button:hover {
   box-shadow: 0 2px 2px .5px rgba(0, 0, 0, 1);
-  opacity: .8;
+  opacity: .9;
+  color: rgba(255, 255, 255, 1);
 }
 
 #top {
   background-color: rgb(247, 247, 247);
 }
+
 h3,
 h6 {
   font-family: "Raleway";
