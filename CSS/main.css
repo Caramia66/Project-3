@@ -203,7 +203,7 @@ body {
 }
 
 
-/* #spinners {
+/#spinners {
   z-index: 100!important;
 }
 
@@ -211,7 +211,7 @@ body {
 	position: fixed;
 	animation: fade 7s 1s ease-in forwards;
 	background-color: whitesmoke;
-	/* background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%); 
+	/* background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);*/
 	width: 390px;
 	height: 100%;
  	z-index: 200;
@@ -289,7 +289,7 @@ body {
   font-size: .5em;
   color: white;
   text-align: center;
-} */
+} 
 
 p {
 	font-size: 1em;
@@ -470,9 +470,31 @@ h6 {
 	background-color: #99E2D0;
 }
 
-.new p {
 
+.heart-1 {
+	width: 24px;
+	height: 24px;
+	background: #FF5252;
+	clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
+	/* transform: scale(3); */
+	position: absolute;
+	bottom: 30px;
+	right: 10px;
+	background-size: 200% 200%;
+	background-image: 
+	linear-gradient(to top, #A72424 50%, transparent 50%);
+	transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
 }
+
+
+
+.heart-1:hover {
+	border-color: #A72424;
+	background-image: 
+	linear-gradient(to top, #A72424 51%, transparent 50%);
+	background-position: 0 100%;
+	transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+	}
 
 footer {
 	height: 15%;
