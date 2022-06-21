@@ -203,18 +203,18 @@ body {
 }
 
 
-#spinners {
+/* #spinners {
   z-index: 100!important;
 }
 
 #overlay {
 	position: fixed;
-	animation: fade 6s 2s ease-in forwards;
+	animation: fade 7s 1s ease-in forwards;
 	background-color: whitesmoke;
-	background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
+	/* background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%); 
 	width: 390px;
 	height: 100%;
-  z-index: 200;
+ 	z-index: 200;
 }
 
 @keyframes fade {
@@ -222,9 +222,14 @@ body {
 		opacity: 1;
 	}
 
-  100% {
-		opacity: 0;
+  95% {
+		opacity: 1;
 	}
+
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
 }
 
 @keyframes spinner {
@@ -234,42 +239,43 @@ body {
 
 	100% {
 		transform:  rotate(5deg) translateY(45px);
+
 	}
 }
 
 
 #spinners p {
   font-family: "Raleway";
-  color: white;
+  color: rgb(6, 174, 115);
   text-align: center;
   position: relative;
   top: 650px;
 }
 
 #spinner {
-	animation: spinner .5s alternate infinite ease-in;
+	animation: spinner .5s alternate infinite ease-in-out;
 	width: 90px;
 	height: 115px;
 	position: absolute;
 	top: 500px;
 	left: 20%;
 	background-color: #99e2d0;
-	mix-blend-mode: multiply;
+	mix-blend-mode: darken;
 }
 
 #spinner-2 {
-	animation: spinner .5s 0.3s alternate infinite ease-in;
+	animation: spinner .5s 0.3s alternate infinite ease-in-out;
 	width: 90px;
 	height: 115px;
 	position: absolute;
 	top: 500px;
 	left: 40%;
 	background-color: #ff79da;
-	mix-blend-mode: multiply;
+	mix-blend-mode: darken;
 }
 
 #spinner-3 {
-	animation: spinner .5s 0.6s alternate infinite ease-in;
+	animation: spinner .5s 0.6s alternate infinite ease-in-out;
 	width: 90px;
 	height: 115px;
 	position: absolute;
@@ -283,7 +289,7 @@ body {
   font-size: .5em;
   color: white;
   text-align: center;
-}
+} */
 
 p {
 	font-size: 1em;
@@ -361,7 +367,7 @@ h1 {
 	color: rgba(255, 255, 255, 1);
 }
 
-.button:hover::after {
+/* .button:hover::after {
 	content: "";
 	position: absolute;
 	display: block;
@@ -374,7 +380,7 @@ h1 {
 	background: blue;
 	z-index: 1;
 	transition: all 0.2s ease-in-out;
-}
+} */
 
 #top {
 	background-color: rgb(247, 247, 247);
@@ -450,6 +456,22 @@ h6 {
 .card p {
 	font-size: 0.8em;
 	font-weight: 200;
+}
+
+.new {
+	position: absolute;
+	top:10px;
+	right: 20px;
+	width: 76px;
+	height: 25px;
+	color: green;
+	text-align: center;
+	line-height: .1em;
+	background-color: #99E2D0;
+}
+
+.new p {
+
 }
 
 footer {
