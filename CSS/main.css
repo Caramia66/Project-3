@@ -202,7 +202,8 @@ body {
 	line-height: 1em;
 }
 
-
+/* animation */
+/* 
  #spinners {
   z-index: 100!important;
 }
@@ -212,7 +213,7 @@ body {
 	animation: fade 7s 1s ease-in forwards;
 	background-color: whitesmoke;
 	/* background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);*/
-	width: 390px;
+	/*width: 390px;
 	height: 100%;
  	z-index: 200;
 }
@@ -289,7 +290,9 @@ body {
   font-size: .5em;
   color: white;
   text-align: center;
-}  
+}   */
+
+/* animation end */
 
 p {
 	font-size: 1em;
@@ -355,7 +358,7 @@ h1 {
 	text-decoration: none;
 	color: rgba(255, 255, 255, 0.8);
 	border-radius: 30px;
-	background: linear-gradient(to top, #ff79da 0%, #9356dc 100%);
+	background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
@@ -388,25 +391,47 @@ h1 {
 }
 
 #how-it-works {
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 }
 
 #how-it-works button {
+	text-align: left;
 	display: block;
-	margin: 15px auto;
-	width: 70%;
-	height: 45px;
+	margin: 10px auto;
+	width: 75%;
+	height: 60px;
 	padding: 20px;
 	font-family: "Raleway", sans-serif;
 	text-decoration: none;
 	color: rgba(9, 0, 0, 0.8);
 	font-size: 0.8em;
-	border-radius: 12px;
+	border-radius: 16px;
 	border: none;
-	background: rgb(245, 221, 254);
+	background: rgb(238, 238, 238);
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
+}
+
+#how-it-works button:hover {
+	background: rgb(245, 221, 254);
+}
+
+#how-it-works span {
+	position: relative;
+	left: -30px;
+	display: inline-block;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	padding: 5px;
+	background: #9356dc;
+	color: rgb(255, 255, 255);
+	text-align: center;
+}
+
+#how-it-works i {
+	padding-right: 10px;
 }
 
 h3,
@@ -475,26 +500,23 @@ h6 {
 	position: absolute;
 	bottom: 20px;
 	right: 10px;
-	background-color: rgb(57, 12, 12);
+	background-color: rgb(198, 198, 198);
 	width: 24px;
 	height: 24px;
 	clip-path: path("M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z");
 	bottom: 30px;
 	right: 20px;
 	background-size: 200% 200%;
-	background-image: 
-	linear-gradient(to top, #ff79da 50%, #9356dc 50%);
 	transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
-	/* background-image: linear-gradient(to top, #ff79da 50%, #9356dc 50%); */
 }
 
 
 
 .heart-1:hover {
-	/* background-image: 
-	linear-gradient(to top, #A72424 51%, transparent 50%); */
+	background-image: 
+	linear-gradient(to top, #9356dc 10%, #ff79da 60%);
 	background-position: 0 100%;
-	transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+	transition: background-position 200ms, color 200ms ease;
 	}
 
 footer {
