@@ -200,101 +200,8 @@ body {
   font-family: "Raleway";
   color: black;
   line-height: 1em;
+  background-color: #fafafa;
 }
-
-/* animation */
-
-#spinners {
-  z-index: 100 !important;
-}
-
-#overlay {
-  position: fixed;
-  animation: fade .01s 1s ease-in forwards;
-  background-color: whitesmoke;
-  /* background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);*/
-  width: 390px;
-  height: 100%;
-  z-index: 200;
-}
-
-@keyframes fade {
-  0% {
-    opacity: 1;
-  }
-
-  95% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-    z-index: -10;
-  }
-}
-
-@keyframes spinner {
-  0% {
-    transform: rotate(-5deg) translateY(0);
-  }
-
-  100% {
-    transform: rotate(5deg) translateY(45px);
-  }
-}
-
-#spinners p {
-  font-family: "Raleway";
-  color: rgb(6, 174, 115);
-  text-align: center;
-  position: relative;
-  top: 650px;
-}
-
-#spinner {
-  animation: spinner 0.5s alternate infinite ease-in-out;
-  width: 90px;
-  height: 115px;
-  position: absolute;
-  top: 500px;
-  left: 20%;
-  background-color: #99e2d0;
-  mix-blend-mode: darken;
-}
-
-#spinner-2 {
-  animation: spinner 0.5s 0.3s alternate infinite ease-in-out;
-  width: 90px;
-  height: 115px;
-  position: absolute;
-  top: 500px;
-  left: 40%;
-  background-color: #ff79da;
-  mix-blend-mode: darken;
-}
-
-#spinner-3 {
-  animation: spinner 0.5s 0.6s alternate infinite ease-in-out;
-  width: 90px;
-  height: 115px;
-  position: absolute;
-  top: 500px;
-  left: 60%;
-  background-color: #9356dc;
-  mix-blend-mode: multiply;
-}
-
-#spinner,
-#spinner-2,
-#spinner-3 {
-  animation-fill-mode: backwards;
-  font: 300;
-  font-size: 0.5em;
-  color: white;
-  text-align: center;
-}
-
-/* animation end */
 
 p {
   font-size: 1em;
@@ -310,33 +217,28 @@ header img {
   padding: 15px;
 }
 
-#explore,
-#location,
-#book-menu {
-  text-align: center;
+#restaurant-pic {
+  width: 100%;
+  height: auto;
 }
 
-#explore p {
-  text-align: center;
-  padding: 0 30px;
-}
 
-#location p {
-  background-color: #e6e6e6;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2) inset;
-  padding: 15px 0;
-  font-size: small;
-  margin-top: 0;
-}
-
-#location i {
-  position: relative;
-  left: -15px;
-  font-size: 1.2em;
-}
-
-#book-menu {
+#entrees,
+#main-dish,
+#desserts p {
+  text-align: left;
+  padding: 20px;
   background-color: #fafafa;
+}
+
+#restaurant {
+  position: absolute;
+  top: 270px;
+  border-radius: 25px 25px 0px 0px;
+  background-color: #fafafa;
+  text-align: left;
+  width: 390px;
+
 }
 
 h1 {
@@ -388,77 +290,12 @@ h6 {
 #cards {
   margin: 0 auto;
   text-align: left;
-  padding: 50px 0px;
 }
 
-
-
-
-
-/* .button:hover::after {
-	content: "";
-	position: absolute;
-	display: block;
-	top: 500px;
-	left: 400px;
-	width: 30%;
-	height: 20px;
-	padding: 10px 20px;
-	border-radius: 30px;
-	background: blue;
-	z-index: 1;
-	transition: all 0.2s ease-in-out;
-} */
 
 #top {
-  background-color: rgb(247, 247, 247);
-  padding-bottom: 30px;
-}
-
-#how-it-works {
-  margin-bottom: 50px;
-}
-
-#how-it-works button {
-  text-align: left;
-  display: block;
-  margin: 10px auto;
-  width: 75%;
-  height: 60px;
-  padding: 20px;
-  font-family: "Raleway", sans-serif;
-  text-decoration: none;
-  color: rgba(9, 0, 0, 0.8);
-  font-size: 0.8em;
-  border-radius: 16px;
-  border: none;
   background-color: #fafafa;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-
-#how-it-works button:hover {
-  background: rgb(245, 221, 254);
-  color: #9356dc;
-
-}
-
-#how-it-works span {
-  position: relative;
-  left: -30px;
-  display: inline-block;
-  border-radius: 50%;
-  width: 25px;
-  height: 25px;
-  padding: 5px;
-  background: #9356dc;
-  color: rgb(255, 255, 255);
-  text-align: center;
-}
-
-#how-it-works i {
-  padding-right: 10px;
+/*  padding-bottom: 10px;*/
 }
 
 
@@ -467,91 +304,18 @@ h6 {
   padding: 20px 0;
 }
 
-.card img {
-  border-radius: 16px 16px 0 0;
-  height: 150px;
-  /* width: 90%; */
-  object-fit: cover;
-  max-width: 100%;
-}
-
-.card {
-  background-color: rgb(255, 255, 255);
-  border-radius: 16px;
-  margin: 15px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: all 0.3s;
-  transform: translateY(0%);
-}
-
-.card:hover {
-  transform: translateY(-4%);
-}
-
-.card .container {
-  padding: 10px 10px;
-  line-height: 0.5em;
-}
-
-.card h4 {
-  font-size: 1em;
-  margin: 0.1em 0;
-  color: black;
-}
-
-.card p {
-  font-size: 0.8em;
-  font-weight: 200;
-}
-
-.new {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  width: 76px;
-  height: 25px;
-  color: green;
-  text-align: center;
-  line-height: 0.1em;
-  background-color: #99e2d0;
-}
-
-.heart-1 {
-  position: absolute;
-  bottom: 20px;
-  right: 10px;
-  background-color: rgb(198, 198, 198);
-  width: 24px;
-  height: 24px;
-  clip-path: path(
-    "M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z"
-  );
-  bottom: 30px;
-  right: 20px;
-  background-size: 200% 200%;
-  transition: background-position 300ms, color 300ms ease,
-    border-color 300ms ease;
-}
-
-.heart-1:hover {
-  background-image: linear-gradient(to top, #9356dc 10%, #ff79da 60%);
-  background-position: 0 100%;
-  transition: background-position 200ms, color 200ms ease;
-}
-
-
-
 
 .menu-card {
-  display: inline-block;
+  margin: 20px auto;
   width: 360px;
   height: 60px;
   color: black;
   background-color: whitesmoke;
-  border: 1px solid grey;
   border-radius: 20px;
   overflow: hidden;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
+
 .menu-card-2 {
   display: inline-block;
   width: 360px;
@@ -562,18 +326,21 @@ h6 {
   transform: translateX(700px);
   transition: 0.7s ease;
 }
+
 .menu-card:hover > .menu-card-2 {
   transform: translateX(300px);
   transition: transform 0.3s ease;
 }
+
 .fa-circle-check {
   font-size: 2em;
   color: white;
   display: inline-block;
-  transform: translate(360px, -50px) rotate(0deg);
+  transform: translate(370px, -50px) rotate(0deg);
   transition: transform 0.5s ease;
   z-index: 1000;
 }
+
 .menu-card:hover > .fa-circle-check {
   transform: translate(312px, -50px) rotate(1turn);
 }
@@ -582,6 +349,7 @@ h6 {
   position: absolute;
   line-height: .7em;
   padding: 5px 20px;
+  width: 360px;
 }
 
 .type h1 {
@@ -591,11 +359,12 @@ h6 {
 }
 .type p {
   font-size: .6em;
-
 }
 
-
-
+#cards .euro {
+ position: relative;
+ left: 110px;
+}
 
 
 footer {
