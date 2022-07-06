@@ -222,7 +222,6 @@ header img {
   height: auto;
 }
 
-
 #entrees,
 #main-dish,
 #desserts p {
@@ -238,7 +237,6 @@ header img {
   background-color: #fafafa;
   text-align: left;
   width: 390px;
-
 }
 
 h1 {
@@ -287,23 +285,32 @@ h6 {
   text-align: center;
 }
 
-#cards {
+#cards .menu-card {
   margin: 0 auto;
   text-align: left;
+  animation: dishes 1.8s ease backwards;
 }
 
+#cards .menu-card:nth-child(1) {
+  animation-delay: 0.4;
+}
+#cards .menu-card:nth-child(2) {
+  animation-delay: 0.7s;
+}
+
+#cards .menu-card:nth-child(3) {
+  animation-delay: 1s;
+}
 
 #top {
   background-color: #fafafa;
-/*  padding-bottom: 10px;*/
+  /*  padding-bottom: 10px;*/
 }
-
 
 #restaurants {
   background-color: rgb(247, 247, 247);
   padding: 20px 0;
 }
-
 
 .menu-card {
   margin: 20px auto;
@@ -347,25 +354,23 @@ h6 {
 
 .type {
   position: absolute;
-  line-height: .7em;
+  line-height: 0.7em;
   padding: 5px 20px;
   width: 360px;
 }
 
 .type h1 {
-  font-size: .8em;
-  padding:0px;
-
+  font-size: 0.8em;
+  padding: 0px;
 }
 .type p {
-  font-size: .6em;
+  font-size: 0.6em;
 }
 
 #cards .euro {
- position: relative;
- left: 110px;
+  position: absolute;
+  right: 50px;
 }
-
 
 footer {
   height: 15%;
@@ -395,4 +400,13 @@ footer ul a {
   padding-right: 4px;
 }
 
-
+@keyframes dishes {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
