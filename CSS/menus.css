@@ -338,29 +338,45 @@ h6 {
   transform: translateX(380px);
   transition: 0.7s ease;
 }
-
 .menu-card:hover > .menu-card-2 {
   transform: translateX(300px);
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-/*---------------- checkmark animation end ------------ */
+.euro::before {
+  content: "...";
+  position: relative;
+  right: 4px;
+  top: -1px;
+  font-size: 2em;
+  transition: all 0.3s ease;
+}
 
-#dessert-cards {
-  padding-bottom: 20px;
+.menu-card:hover .euro {
+  transform: translateX(-20px);
+}
+
+.euro {
+  transition: all 0.3s ease;
 }
 
 .fa-circle-check {
   font-size: 2em;
   color: white;
   display: inline-block;
-  transform: translate(370px, -50px) rotate(0deg);
+  transform: translate(370px, -47px) rotate(0deg);
   transition: transform 0.4s ease;
   z-index: 1000;
 }
 
 .menu-card:hover > .fa-circle-check {
-  transform: translate(312px, -50px) rotate(1turn);
+  transform: translate(312px, -47px) rotate(1turn);
+}
+
+/*---------------- checkmark animation end ------------ */
+
+#dessert-cards {
+  padding-bottom: 20px;
 }
 
 .type {
@@ -383,7 +399,7 @@ h6 {
 
 .menu-card .euro {
   position: absolute;
-  right: 70px;
+  right: 60px;
 }
 
 /* ------------------ gradual appearance card animations ----------------------------- */
