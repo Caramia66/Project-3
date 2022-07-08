@@ -297,7 +297,9 @@ body {
 /* animation end */
 
 p {
-  font-size: 1em;
+  font-size: 1.2em;
+  font-weight: 200;
+  line-height: 1.2em;
 }
 
 header {
@@ -342,6 +344,7 @@ header img {
 h1 {
   font-size: large;
   padding: 20px;
+  font-weight: 500;
 }
 
 h3,
@@ -479,7 +482,7 @@ h6 {
 }
 
 .card:hover {
-  transform: translateY(-4%);
+  transform: translateY(-2%);
 }
 
 .card .container {
@@ -491,6 +494,7 @@ h6 {
   font-size: 1em;
   margin: 0.1em 0;
   color: black;
+  font-weight: 400;
 }
 
 .card p {
