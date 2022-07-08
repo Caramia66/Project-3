@@ -197,7 +197,7 @@ template {
 
 body {
   width: 390px;
-  font-family: "Raleway";
+  font-family: "Roboto";
   color: black;
   line-height: 1em;
   background-color: #fafafa;
@@ -215,6 +215,15 @@ header {
 header img {
   width: 50%;
   padding: 15px;
+  position: relative;
+  left: -9px;
+}
+
+.fa-arrow-left {
+  content: "\f060";
+  top: -25px;
+  position: relative;
+  left: -60px;
 }
 
 #restaurant-pic {
@@ -222,12 +231,20 @@ header img {
   height: auto;
 }
 
-#entrees,
-#main-dish,
+#entrees p,
+#main-dish p,
 #desserts p {
   text-align: left;
-  padding: 20px;
+  padding: 40px 0px 0px 20px;
+  margin-bottom: 0px;
   background-color: #fafafa;
+}
+
+hr.underline {
+  border: 2px solid #99e2d0;
+  width: 40px;
+  display: inline-block;
+  margin-left: 20px;
 }
 
 #restaurant {
@@ -238,15 +255,19 @@ header img {
   text-align: left;
   width: 390px;
 }
-
+#restaurant h1 {
+  font-family: shrikhand;
+  font-size: 1.5em;
+  padding: 20px;
+}
 h1 {
   font-size: large;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 h3,
 h6 {
-  font-family: "Raleway";
+  font-family: "Roboto";
   font-weight: 500;
   line-height: 1.3;
 }
@@ -263,7 +284,7 @@ h6 {
   width: 60%;
   height: 60px;
   padding: 10px 20px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
   border-radius: 30px;
@@ -280,26 +301,9 @@ h6 {
 }
 
 .order-button {
-  padding-bottom: 50px;
+  padding: 20px 0px 50px 0px;
   margin: auto;
   text-align: center;
-}
-
-#cards .menu-card {
-  margin: 0 auto;
-  text-align: left;
-  animation: dishes 1.8s ease backwards;
-}
-
-#cards .menu-card:nth-child(1) {
-  animation-delay: 0.4;
-}
-#cards .menu-card:nth-child(2) {
-  animation-delay: 0.7s;
-}
-
-#cards .menu-card:nth-child(3) {
-  animation-delay: 1s;
 }
 
 #top {
@@ -312,6 +316,7 @@ h6 {
   padding: 20px 0;
 }
 
+/*---------------- checkmark animation ------------ */
 .menu-card {
   margin: 20px auto;
   width: 360px;
@@ -321,6 +326,7 @@ h6 {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .menu-card-2 {
@@ -328,9 +334,8 @@ h6 {
   width: 360px;
   height: 60px;
   color: black;
-  background-color: aquamarine;
-  z-index: -100;
-  transform: translateX(700px);
+  background-color: #99e2d0;
+  transform: translateX(380px);
   transition: 0.7s ease;
 }
 
@@ -339,12 +344,18 @@ h6 {
   transition: transform 0.3s ease;
 }
 
+/*---------------- checkmark animation end ------------ */
+
+#dessert-cards {
+  padding-bottom: 20px;
+}
+
 .fa-circle-check {
   font-size: 2em;
   color: white;
   display: inline-block;
   transform: translate(370px, -50px) rotate(0deg);
-  transition: transform 0.5s ease;
+  transition: transform 0.4s ease;
   z-index: 1000;
 }
 
@@ -354,23 +365,88 @@ h6 {
 
 .type {
   position: absolute;
-  line-height: 0.7em;
+  line-height: 0.5em;
   padding: 5px 20px;
   width: 360px;
 }
 
 .type h1 {
-  font-size: 0.8em;
+  font-weight: 500;
+  font-size: 1em;
   padding: 0px;
 }
+
 .type p {
-  font-size: 0.6em;
+  font-size: 0.8em;
+  font-weight: 300;
 }
 
-#cards .euro {
+.menu-card .euro {
   position: absolute;
-  right: 50px;
+  right: 70px;
 }
+
+/* ------------------ gradual appearance card animations ----------------------------- */
+#entree-cards {
+  animation: category 1.2s backwards;
+}
+#entree-cards .menu-card {
+  margin: 20px auto;
+  text-align: left;
+  animation: dishes 1.2s 0.5s ease backwards;
+}
+
+#entree-cards .menu-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+#entree-cards .menu-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+#entree-cards .menu-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+#main-dish-cards {
+  animation: category 1.2s 0.7s backwards;
+}
+
+#main-dish-cards .menu-card {
+  margin: 20px auto;
+  text-align: left;
+  animation: dishes 1.2s 3s ease backwards;
+}
+
+#main-dish-cards .menu-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+#main-dish-cards .menu-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+#main-dish-cards .menu-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+#dessert-cards {
+  animation: category 1.2s 1s backwards;
+}
+#dessert-cards .menu-card {
+  margin: 20px auto;
+  text-align: left;
+  animation: dishes 1.2s 5s ease backwards;
+}
+
+#dessert-cards .menu-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+#dessert-cards .menu-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+#dessert-cards .menu-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+/* ------------------ gradual appearance card animations ----------------------------- */
 
 footer {
   height: 15%;
@@ -379,8 +455,10 @@ footer {
 }
 
 footer img {
-  width: 5vw;
-  padding-bottom: 7px;
+  display: block;
+  width: 10vw;
+  padding-left: 40px;
+  margin-top: 20px;
 }
 
 footer ul {
@@ -398,6 +476,17 @@ footer ul a {
   color: white;
   font-size: 0.2em;
   padding-right: 4px;
+}
+
+@keyframes category {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 @keyframes dishes {
