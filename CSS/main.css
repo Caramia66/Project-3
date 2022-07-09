@@ -502,15 +502,15 @@ h6 {
   font-weight: 200;
 }
 
-.new {
+.new p {
   position: absolute;
   top: 10px;
   right: 20px;
-  width: 76px;
+  width: 75px;
   height: 25px;
   color: green;
   text-align: center;
-  line-height: 0.1em;
+  line-height: 2em;
   background-color: #99e2d0;
 }
 
@@ -616,5 +616,3 @@ footer ul a {
   font-size: 0.2em;
   padding-right: 4px;
 }
-
-
