@@ -203,6 +203,9 @@ body {
   background-color: #fafafa;
 }
 
+main {
+  flex-flow: column nowrap;
+}
 p {
   font-size: 1em;
 }
@@ -325,6 +328,7 @@ h6 {
   overflow: hidden;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .menu-card-2 {
@@ -334,11 +338,11 @@ h6 {
   color: black;
   background-color: #99e2d0;
   transform: translateX(380px);
-  transition: 0.7s ease;
-}
-.menu-card:hover > .menu-card-2 {
-  transform: translateX(300px);
   transition: all 0.3s ease;
+}
+
+.menu-card:hover .menu-card-2 {
+  transform: translateX(300px);
 }
 
 /* .euro::before {
@@ -350,16 +354,20 @@ h6 {
   transition: all 0.3s ease;
 } */
 
-/* .menu-card:hover .euro {
-  transform: translateX(-20px);
-} */
-
-.menu-card:hover .type {
-  width: 260px;
+.type {
+  display: inline;
+  position: absolute;
+  line-height: 0.5em;
+  padding: 5px 20px;
+  width: 360px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: all 0.3s ease;
 }
 
-.euro {
-  transition: all 0.3s ease;
+.menu-card:hover p {
+  width: 220px;
 }
 
 .fa-circle-check {
@@ -371,7 +379,7 @@ h6 {
   z-index: 1000;
 }
 
-.menu-card:hover > .fa-circle-check {
+.menu-card:hover .fa-circle-check {
   transform: translate(312px, -47px) rotate(1turn);
 }
 
@@ -381,32 +389,34 @@ h6 {
   padding-bottom: 20px;
 }
 
-.type {
-  position: absolute;
-  line-height: 0.5em;
-  padding: 5px 20px;
-  width: 360px;
+.type h1 {
+  font-weight: 500;
+  font-size: 1em;
+  padding: 0px 5px;
+}
+
+.type p {
+  padding: 5px 5px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   transition: all 0.3s ease;
-  transform: translate(0px);
-}
-
-.type h1 {
-  font-weight: 500;
-  font-size: 1em;
-  padding: 0px;
-}
-
-.type p {
   font-size: 0.8em;
   font-weight: 300;
+  transition: all 0.3s ease;
 }
 
-.menu-card .euro {
-  position: absolute;
-  right: 60px;
+h5 {
+  position: relative;
+  display: inline-block;
+  right: -280px;
+  top: -48px;
+  transition: all 0.3s ease;
+  /* transform: translate(269px, -41px); */
+}
+
+.menu-card:hover h5 {
+  transform: translateX(-45px);
 }
 
 /* ------------------ gradual appearance card animations ----------------------------- */
