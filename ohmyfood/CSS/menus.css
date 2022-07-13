@@ -237,6 +237,12 @@ header img {
   height: auto;
 }
 
+#enchanted-pic {
+  height: 260px;
+  object-fit: cover;
+  width: 100%;
+}
+
 #entrees p,
 #main-dish p,
 #desserts p {
