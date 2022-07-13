@@ -532,6 +532,7 @@ h6 {
   font-size: 0.8em;
   padding: 0px;
 }
+
 .type p {
   font-size: 0.6em;
 }
@@ -566,7 +567,7 @@ footer ul a {
   padding-right: 4px;
 }
 
-@media only screen and (min-width: 391px) {
+/* @media only screen and (min-width: 391px) {
   body {
     width: 820px;
   }
@@ -651,4 +652,4 @@ footer ul a {
   #restaurants [id] {
     width: 400px;
   }
-}
+} */

@@ -229,7 +229,7 @@ header img {
   left: -60px;
 }
 .fa-arrow-left:hover {
-  color: #99E2D0;
+  color: #99e2d0;
 }
 
 #restaurant-pic {
@@ -538,29 +538,28 @@ footer ul a {
   }
 }
 
-
-
-
-@media only screen and (min-width: 391px) {
-body {
-  width: 820px
+/* @media only screen and (min-width: 391px) {
+  body {
+    width: 820px;
   }
   header img {
-  width: 20%;
-}
-footer img {
-  width: 20%;
-}
-   #restaurant {
+    width: 20%;
+  }
+  footer img {
+    width: 20%;
+  }
+  #restaurant {
     top: 440px;
     width: 500px;
-}
-#restaurant-pic {
+  }
+  #restaurant-pic {
     width: 100%;
     height: 30vw;
     object-fit: cover;
-}
-  @media only screen and (min-width: 821px) {
-body {
-  width: 1440px
   }
+}
+@media only screen and (min-width: 821px) {
+  body {
+    width: 1440px;
+  }
+} */
