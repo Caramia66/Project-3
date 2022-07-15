@@ -272,6 +272,19 @@ hr.underline {
   font-size: 1.5em;
   padding: 20px;
 }
+
+#enchanted-restaurant {
+  position: absolute;
+  top: 270px;
+  border-radius: 25px 25px 0px 0px;
+  background-color: #fafafa;
+  text-align: left;
+  width: 390px;
+
+  font-family: shrikhand;
+  font-size: 1.5em;
+  padding: 20px;
+}
 h1 {
   font-size: large;
 }
@@ -543,8 +556,8 @@ footer ul a {
     transform: translateY(0px);
   }
 }
-
-/* @media only screen and (min-width: 391px) {
+/* 
+@media only screen and (min-width: 391px) {
   body {
     width: 820px;
   }
@@ -569,7 +582,11 @@ footer ul a {
     width: 1440px;
   }
   #restaurant {
-    top: 555px;
+    top: 425px;
+    width: 430px;
+  }
+  #enchanted-restaurant {
+    top: 260px;
     width: 430px;
   }
 } */
